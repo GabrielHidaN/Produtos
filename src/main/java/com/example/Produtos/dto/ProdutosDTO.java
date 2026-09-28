@@ -1,18 +1,15 @@
-package com.example.Produtos.Entity;
+package com.example.Produtos.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name = "produtos")
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-public class Produtos {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ProdutosDTO {
+
+
     private Long id;
     private String nome;
     private String descricao;
